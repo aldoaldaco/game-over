@@ -1,0 +1,42 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="game-over">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+      }
+      img {
+        width: 450px;
+        height: 250px;
+      }
+    </style>
+    <img src="../images/gameover.jpg" alt="gameover">
+  </template>
+
+  <script>
+    /**
+     * `game-over`
+     * picture to show when the player is out
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class GameOver extends Polymer.Element {
+      static get is() { return 'game-over'; }
+      static get properties() {
+        return {
+        };
+      }
+    }
+
+    window.customElements.define(GameOver.is, GameOver);
+  </script>
+</dom-module>
